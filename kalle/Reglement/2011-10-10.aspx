@@ -133,10 +133,10 @@
 			    betaling af baneleje, kan bestyrelsen pålægge medlemmet at betale 
 			    sin andel af banelejen.<br>
 			    <br>
-			    - Baneleje betales hver måned med 220,-<br>
+			    - Baneleje betales hver måned med 240,-<br>
 			    - Evt. manglende betaling dækkes af Kalle, hvis den manglende betaling 
 			    skyldes fritagelse for baneleje.<br />
-                - Hvis bestyrelsen skønner, at de 220,- ikke står mål med antallet af betalere og 
+                - Hvis bestyrelsen skønner, at de 240,- ikke står mål med antallet af betalere og 
                 antallet af baner bestilt for et år, kan beløbet ændres øjeblikkeligt af 
                 bestyrelsen.<br>
 			    <br />

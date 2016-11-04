@@ -94,6 +94,7 @@
     <Content Include="Almanak\2016\2016-09-05.aspx" />
     <Content Include="Almanak\2016\2016-05-30.aspx" />
     <Content Include="Almanak\2016\2016-05-07.aspx" />
+    <Content Include="Almanak\2017\2017-02-25.aspx" />
     <Content Include="CSS\Navigation - Copy.css" />
     <Content Include="Default.aspx" />
     <Content Include="CSS\Navigation.css" />
@@ -623,6 +624,13 @@
     </Compile>
     <Compile Include="Almanak\2016\2016-05-07.aspx.designer.cs">
       <DependentUpon>2016-05-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2017\2017-02-25.aspx.cs">
+      <DependentUpon>2017-02-25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2017\2017-02-25.aspx.designer.cs">
+      <DependentUpon>2017-02-25.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

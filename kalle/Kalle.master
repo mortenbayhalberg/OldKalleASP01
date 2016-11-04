@@ -62,6 +62,11 @@
 
                             <ul style="width:150px;">
 
+                                 <li><a href="#" target="_self" title="Alm. 2017">2017</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2017/2017-02-25.aspx" runat="server" >25/02/2017 Julefrokost</a></li>
+                                    </ul> 
+
                                 <li><a href="#" target="_self" title="Alm. 2016">2016</a>
                                     <ul style="width:150px;">
                                         <li><a href="~/Almanak/2016/2016-10-31.aspx" runat="server" >31/10/2016 Generalforsamling</a></li>
