@@ -1,0 +1,296 @@
+﻿body {
+    font-family: Verdana;
+}
+.midten
+{
+    float: left;
+    width: 60%;
+    font-family: Verdana;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #666666;
+}
+.venstre
+{
+    float: left;
+    background-image: url('/images/Kalle/kalle0.jpg');
+    background-repeat: no-repeat;
+    height: 89px;
+    width: 30%;
+}
+.hojre
+{
+    background-position: right;
+    background-image: url('/images/Kalle/kalle0.jpg');
+    background-repeat: no-repeat;
+    float: left;
+    height: 89px;
+    width: 9%;
+}
+.Indhold
+{
+    font-family: Verdana;
+    font-size: 10px;
+    margin-left: 80px;
+}
+#Overskrift
+{
+    background-color: #E2E2C5;
+    height: 90px;
+}
+.Default-Indhold
+{
+    float: left;
+    position: relative;
+    width: 60%;
+    left: 30%;
+}
+.Almanak-menu
+{
+    width: 40%;
+    float: left;
+    font-family: Verdana;
+    font-size: medium;
+    font-weight: bold;
+    position: relative;
+    left: 30%;
+}
+
+/* CSS Document */
+
+/* Fandtes ikke i original teksten, men ser ikke ud til at mangle */
+.Almanak-V-margin
+{
+    width: 30%;
+    float: left;
+}
+.Almanak-Overskrift
+{
+    width: 60%;
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: medium;
+}
+.Almanak-Afholdelsessted
+{
+    width: 60%;
+    margin-left: 30%;
+    font-size: medium;
+    margin-top: 10px;
+}
+.Almanak-V-Ref
+{
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.Almanak-H-Ref
+{
+    width: 40%;
+    margin-left: 52%;
+    margin-top: 10px;
+}
+.Almanak-Bund
+{
+    width: 99%;
+    position: relative;
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+#Almanak-Container-Ref
+{
+    min-width: 600px;
+}
+.HovedMenuLinje
+{
+position: relative;
+z-index:5;
+}
+.item-primary
+{
+}
+
+/*^'^ Navigation Structure ^'^*/
+.nav-container-outer{
+background: #990000;
+padding: 0px;
+height: 74px;
+background: url(/images/Menu/nav-bg.jpg);
+}
+.float-left{
+float: left;
+}
+.float-right{
+float: right;
+}
+.nav-container .divider{
+display:block;
+font-size:1px;
+border-width:0px;
+border-style:solid;
+}
+.nav-container .divider-vert{
+float:left;
+width:0px;
+display: none;
+}
+.nav-container .item-secondary-title{
+display:block;
+cursor:default;
+white-space:nowrap;
+}
+.clear{
+font-size:1px;
+height:0px;
+width:0px;
+clear:left;
+line-height:0px;
+display:block;
+float:none;
+}
+/* Fandtes i den oprindelige tekst, fjernet fra .nav-container - zoom:1; */
+.nav-container{
+position:relative;
+margin: 0 auto;
+}
+.nav-container a, .nav-container li{
+float:left;
+display:block;
+white-space:nowrap;
+}
+.nav-container div a, .nav-container ul a, .nav-container ul li{
+float:none;
+}
+.nav-container ul{
+left:-10000px;
+position:absolute;
+}
+.nav-container, .nav-container ul{
+list-style:none;
+padding:0px;
+margin:0px;
+}
+.nav-container li a{
+float:none
+}
+.nav-container li{
+position:relative;
+}
+.nav-container ul{
+z-index:10;
+}
+.nav-container ul ul{
+z-index:20;
+}
+.nav-container ul ul ul{
+z-index:30;
+}
+.nav-container ul ul ul ul{
+z-index:40;
+}
+.nav-container ul ul ul ul ul{
+z-index:50;
+}
+li:hover>ul{
+left:auto;
+}
+#nav-container ul {
+top:100%;
+}
+#nav-container ul li:hover>ul{
+top:0px;
+left:100%;
+}
+
+/*^'^ Primary Items ^'^*/	
+#nav-container a{	
+padding:7px 17px 7px 18px;
+margin: 10px 0px 0px 0px;
+color: #FFFFFF;
+font-family: Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:14px;
+text-decoration:none;
+font-weight: bold;
+background: url(/images/Menu/item-primary-bg.gif);
+background-repeat: no-repeat;
+background-position: top;
+}
+
+#nav-container a:hover{
+color: #6C3600;
+background: url(/images/Menu/item-primary-bg.gif);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/*^'^ Secondary Items Container ^'^*/	
+#nav-container div, #nav-container ul{	
+padding:10px 4px 10px 4px;
+margin:0px 0px 0px 0px;
+background: url(/images/Menu/item-secondary-container-bg.jpg);
+background-repeat: repeat-x;
+background-color: #FF9900;
+border-bottom: 1px solid #CA6500;
+}
+
+/*^'^ Secondary Items ^'^*/	
+#nav-container div a, #nav-container ul a{	
+padding:3px 10px 3px 6px;
+background-color: #FFFFFF;
+background: url(/images/Menu/item-secondary-bg.jpg);
+background-repeat: no-repeat;
+background-position: 0px 22px;
+font-size:11px;
+border-width:0px;
+border-style:none;
+margin: 0px 0px 0px 0px;
+width: 149px;
+}
+
+/*^'^ Secondary Items Hover State ^'^*/	
+#nav-container div a:hover, #nav-container ul a:hover{	
+background-color: #FFFFFF;
+background: url(/images/Menu/item-secondary-bg.jpg);
+background-repeat: no-repeat;
+color:#CC0000;
+}
+
+/*^'^ Secondary Item Titles ^'^*/	
+#nav-container .item-secondary-title{	
+cursor:default;
+padding:4px 0px 3px 7px;
+color: #6C3600;
+font-family: Arial, Trebuchet MS, Arial, sans-serif, Helvetica;
+font-size:11px;
+background: url(/images/Menu/item-secondary-title-bg.jpg);
+background-repeat: no-repeat;
+font-weight:bold;
+}
+
+/*^'^ Horizontal Dividers ^'^*/	
+#nav-container .divider-horiz{	
+border-top-width:1px;
+margin:5px 5px;
+border-color: #C16100;
+}
+
+/*^'^ Vertical Dividers ^'^*/	
+#nav-container .divider-vert{	
+border-left-width:1px;
+height:15px;
+margin:4px 2px 0px 2px;
+border-color:#AAAAAA;
+}                    
+
+.Center-data
+{
+}
+
+.Vedligehold-Centrer-drop-down
+{
+    font-size: medium;
+    font-family: Verdana;
+}
+

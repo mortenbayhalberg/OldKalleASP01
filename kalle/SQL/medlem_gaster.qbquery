@@ -1,0 +1,8 @@
+﻿SELECT
+      Stam_Navn, Stam_E_Mail
+FROM
+      Stam
+WHERE
+      Stam_Aresmedlem = False AND Stam_Provemedlem = False AND Stam_Passiv = False AND Stam_Aktiv_medlem = False AND Stam_Udmeldt = False
+ORDER BY
+      Stam_Navn

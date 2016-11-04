@@ -1,0 +1,8 @@
+﻿SELECT
+      Stam_Navn, Stam_Formand, Stam_Nastformand, Stam_Kasser, Stam_Revisor, Stam_Skema_ansvarlig, Stam_Web, Stam_E_Mail
+FROM
+      Stam
+WHERE
+      Stam_Formand = True OR Stam_Nastformand = True or Stam_Kasser = True OR Stam_Revisor = True OR Stam_Skema_ansvarlig = True OR Stam_Web = True
+ORDER BY
+      Stam_Navn

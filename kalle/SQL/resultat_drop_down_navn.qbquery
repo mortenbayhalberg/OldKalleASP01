@@ -1,0 +1,3 @@
+﻿select Stam_navn as Navn, Stam_Auto1 as Auto1
+from stam
+order by Navn

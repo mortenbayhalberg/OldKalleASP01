@@ -1,0 +1,18 @@
+﻿SELECT
+      Stam_Navn,
+      Stam_init,
+      Stam_Opt_dato,
+      CASE Stam_Aktiv_medlem
+         WHEN TRUE THEN 'X'
+         ELSE ' '
+      END as chaAktiv,
+      CASE Stam_Provemedlem
+         WHEN TRUE THEN 'X'
+         ELSE ' '
+      END as chaProve,
+      Stam_E_Mail
+FROM
+      Stam
+WHERE
+      (Stam_Aktiv_medlem = true) OR (Stam_Provemedlem = true)
+ORDER BY Stam_Navn

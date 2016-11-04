@@ -1,0 +1,14 @@
+﻿select
+        Sesson, Auto1, Stam_Navn,
+        sum(Spil1 + Spil2 + Spil3 + Spil4 + Spil5) / sum(Spil1_spillet + Spil2_spillet + Spil3_spillet + Spil4_spillet + Spil5_spillet) AS GNS_AlleSpil,
+        sum(Spil1) / (case when sum(Spil1_spillet) = 0 then 1 else sum(Spil1_spillet) end) AS GNS_Spil1,
+        sum(Spil2) / (case when sum(Spil2_spillet) = 0 then 1 else sum(Spil2_spillet) end) AS GNS_Spil2,
+        sum(Spil3) / (case when sum(Spil3_spillet) = 0 then 1 else sum(Spil3_spillet) end) AS GNS_Spil3,
+        sum(Spil4) / (case when sum(Spil4_spillet) = 0 then 1 else sum(Spil4_spillet) end) AS GNS_Spil4,
+        sum(Spil5) / (case when sum(Spil5_spillet) = 0 then 1 else sum(Spil5_spillet) end) AS GNS_Spil5
+from
+        score join stam on Auto1 = Stam_Auto1
+group by
+        Sesson, Auto1, Stam_Navn
+order by
+        Sesson desc, sum(Spil1 + Spil2 + Spil3 + Spil4 + Spil5) / sum(Spil1_spillet + Spil2_spillet + Spil3_spillet + Spil4_spillet + Spil5_spillet) desc

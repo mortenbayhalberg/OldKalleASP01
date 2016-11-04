@@ -1,0 +1,8 @@
+﻿SELECT
+      Stam_Navn, Stam_init, Stam_Opt_dato, Stam_Passiv, Stam_Aresmedlem, Stam_E_Mail
+FROM
+      Stam
+WHERE
+      Stam_Passiv =True OR Stam_Aresmedlem = True
+ORDER BY
+      Stam_Navn

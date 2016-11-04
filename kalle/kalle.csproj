@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F9D215A-8321-46E8-BB11-FFFBB0AFAEA4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>kalle</RootNamespace>
+    <AssemblyName>kalle</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Almanak\2012\2012-11-26.aspx" />
+    <Content Include="Almanak\2013\2013-11-04.aspx" />
+    <Content Include="Almanak\2013\2013-05-27.aspx" />
+    <Content Include="Almanak\2013\2013-09-02.aspx" />
+    <Content Include="Almanak\2013\2013-01-05.aspx" />
+    <Content Include="Almanak\2013\2013-04-26.aspx" />
+    <Content Include="Almanak\2013\IMG-001.jpg" />
+    <Content Include="Almanak\2013\IMG-002.jpg" />
+    <Content Include="Almanak\2013\IMG_0456.JPG" />
+    <Content Include="Almanak\2014\2014-07-18.aspx" />
+    <Content Include="Almanak\2014\2014-05-26.aspx" />
+    <Content Include="Almanak\2014\2014-04-17.aspx" />
+    <Content Include="Almanak\2014\2014-01-11.aspx" />
+    <Content Include="Almanak\2015\2015-12-19.aspx" />
+    <Content Include="Almanak\2015\2015-08-01.aspx" />
+    <Content Include="Almanak\2015\2015-09-07.aspx" />
+    <Content Include="Almanak\2015\2015-05-18.aspx" />
+    <Content Include="Almanak\2015\2015-04-05.aspx" />
+    <Content Include="Almanak\2016\2016-10-31.aspx" />
+    <Content Include="Almanak\2016\2016-06-11.aspx" />
+    <Content Include="Almanak\2016\2016-08-26.aspx" />
+    <Content Include="Almanak\2016\2016-09-05.aspx" />
+    <Content Include="Almanak\2016\2016-05-30.aspx" />
+    <Content Include="Almanak\2016\2016-05-07.aspx" />
+    <Content Include="CSS\Navigation - Copy.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="CSS\Navigation.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almanak\2000\2000-06-28.aspx.cs">
+      <DependentUpon>2000-06-28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2000\2000-06-28.aspx.designer.cs">
+      <DependentUpon>2000-06-28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2000\2000-08-05.aspx.cs">
+      <DependentUpon>2000-08-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2000\2000-08-05.aspx.designer.cs">
+      <DependentUpon>2000-08-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2000\2000-12-02.aspx.cs">
+      <DependentUpon>2000-12-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2000\2000-12-02.aspx.designer.cs">
+      <DependentUpon>2000-12-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-02-05.aspx.cs">
+      <DependentUpon>2001-02-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-02-05.aspx.designer.cs">
+      <DependentUpon>2001-02-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-04-16.aspx.cs">
+      <DependentUpon>2001-04-16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-04-16.aspx.designer.cs">
+      <DependentUpon>2001-04-16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-09-10.aspx.cs">
+      <DependentUpon>2001-09-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2001\2001-09-10.aspx.designer.cs">
+      <DependentUpon>2001-09-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-06-26.aspx.cs">
+      <DependentUpon>2002-06-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-06-26.aspx.designer.cs">
+      <DependentUpon>2002-06-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-08-17.aspx.cs">
+      <DependentUpon>2002-08-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-08-17.aspx.designer.cs">
+      <DependentUpon>2002-08-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-10-07.aspx.cs">
+      <DependentUpon>2002-10-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-10-07.aspx.designer.cs">
+      <DependentUpon>2002-10-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-12-14.aspx.cs">
+      <DependentUpon>2002-12-14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2002\2002-12-14.aspx.designer.cs">
+      <DependentUpon>2002-12-14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-04-07.aspx.cs">
+      <DependentUpon>2003-04-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-04-07.aspx.designer.cs">
+      <DependentUpon>2003-04-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-04-17.aspx.cs">
+      <DependentUpon>2003-04-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-04-17.aspx.designer.cs">
+      <DependentUpon>2003-04-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-08-16.aspx.cs">
+      <DependentUpon>2003-08-16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-08-16.aspx.designer.cs">
+      <DependentUpon>2003-08-16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-08-18.aspx.cs">
+      <DependentUpon>2003-08-18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-08-18.aspx.designer.cs">
+      <DependentUpon>2003-08-18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-12-06.aspx.cs">
+      <DependentUpon>2003-12-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-12-06.aspx.designer.cs">
+      <DependentUpon>2003-12-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-12-20.aspx.cs">
+      <DependentUpon>2003-12-20.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2003\2003-12-20.aspx.designer.cs">
+      <DependentUpon>2003-12-20.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-04-11.aspx.cs">
+      <DependentUpon>2004-04-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-04-11.aspx.designer.cs">
+      <DependentUpon>2004-04-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-06-28.aspx.cs">
+      <DependentUpon>2004-06-28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-06-28.aspx.designer.cs">
+      <DependentUpon>2004-06-28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-08-14.aspx.cs">
+      <DependentUpon>2004-08-14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-08-14.aspx.designer.cs">
+      <DependentUpon>2004-08-14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-09-27.aspx.cs">
+      <DependentUpon>2004-09-27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-09-27.aspx.designer.cs">
+      <DependentUpon>2004-09-27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-12-11.aspx.cs">
+      <DependentUpon>2004-12-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2004\2004-12-11.aspx.designer.cs">
+      <DependentUpon>2004-12-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2005\2005-01-08.aspx.cs">
+      <DependentUpon>2005-01-08.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2005\2005-01-08.aspx.designer.cs">
+      <DependentUpon>2005-01-08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2005\2005-09-05.aspx.cs">
+      <DependentUpon>2005-09-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2005\2005-09-05.aspx.designer.cs">
+      <DependentUpon>2005-09-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-01-21.aspx.cs">
+      <DependentUpon>2006-01-21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-01-21.aspx.designer.cs">
+      <DependentUpon>2006-01-21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-04-13.aspx.cs">
+      <DependentUpon>2006-04-13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-04-13.aspx.designer.cs">
+      <DependentUpon>2006-04-13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-06-12.aspx.cs">
+      <DependentUpon>2006-06-12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-06-12.aspx.designer.cs">
+      <DependentUpon>2006-06-12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-07-28.aspx.cs">
+      <DependentUpon>2006-07-28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-07-28.aspx.designer.cs">
+      <DependentUpon>2006-07-28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-08-28.aspx.cs">
+      <DependentUpon>2006-08-28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-08-28.aspx.designer.cs">
+      <DependentUpon>2006-08-28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-10-30.aspx.cs">
+      <DependentUpon>2006-10-30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2006\2006-10-30.aspx.designer.cs">
+      <DependentUpon>2006-10-30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-01-06.aspx.cs">
+      <DependentUpon>2007-01-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-01-06.aspx.designer.cs">
+      <DependentUpon>2007-01-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-05-04.aspx.cs">
+      <DependentUpon>2007-05-04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-05-04.aspx.designer.cs">
+      <DependentUpon>2007-05-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-07-28.aspx.cs">
+      <DependentUpon>2007-07-28.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-07-28.aspx.designer.cs">
+      <DependentUpon>2007-07-28.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-11-05.aspx.cs">
+      <DependentUpon>2007-11-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2007\2007-11-05.aspx.designer.cs">
+      <DependentUpon>2007-11-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-02-02.aspx.cs">
+      <DependentUpon>2008-02-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-02-02.aspx.designer.cs">
+      <DependentUpon>2008-02-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-05-26.aspx.cs">
+      <DependentUpon>2008-05-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-05-26.aspx.designer.cs">
+      <DependentUpon>2008-05-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-11-17.aspx.cs">
+      <DependentUpon>2008-11-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2008\2008-11-17.aspx.designer.cs">
+      <DependentUpon>2008-11-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-01-17.aspx.cs">
+      <DependentUpon>2009-01-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-01-17.aspx.designer.cs">
+      <DependentUpon>2009-01-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-05-25.aspx.cs">
+      <DependentUpon>2009-05-25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-05-25.aspx.designer.cs">
+      <DependentUpon>2009-05-25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-06-13.aspx.cs">
+      <DependentUpon>2009-06-13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-06-13.aspx.designer.cs">
+      <DependentUpon>2009-06-13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-08-29.aspx.cs">
+      <DependentUpon>2009-08-29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-08-29.aspx.designer.cs">
+      <DependentUpon>2009-08-29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-09-07.aspx.cs">
+      <DependentUpon>2009-09-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2009\2009-09-07.aspx.designer.cs">
+      <DependentUpon>2009-09-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-12-18.aspx.cs">
+      <DependentUpon>2010-12-18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-12-18.aspx.designer.cs">
+      <DependentUpon>2010-12-18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-10-25.aspx.cs">
+      <DependentUpon>2010-10-25.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-10-25.aspx.designer.cs">
+      <DependentUpon>2010-10-25.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-08-31.aspx.cs">
+      <DependentUpon>2010-08-31.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-08-31.aspx.designer.cs">
+      <DependentUpon>2010-08-31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-05-31.aspx.cs">
+      <DependentUpon>2010-05-31.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-05-31.aspx.designer.cs">
+      <DependentUpon>2010-05-31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-09-06.aspx.cs">
+      <DependentUpon>2010-09-06.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-09-06.aspx.designer.cs">
+      <DependentUpon>2010-09-06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-04-10.aspx.cs">
+      <DependentUpon>2010-04-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2010\2010-04-10.aspx.designer.cs">
+      <DependentUpon>2010-04-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-10-10.aspx.cs">
+      <DependentUpon>2011-10-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-10-10.aspx.designer.cs">
+      <DependentUpon>2011-10-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-09-05.aspx.cs">
+      <DependentUpon>2011-09-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-09-05.aspx.designer.cs">
+      <DependentUpon>2011-09-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-23.aspx.cs">
+      <DependentUpon>2011-05-23.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-23.aspx.designer.cs">
+      <DependentUpon>2011-05-23.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-30.aspx.cs">
+      <DependentUpon>2011-05-30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-30.aspx.designer.cs">
+      <DependentUpon>2011-05-30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-09.aspx.cs">
+      <DependentUpon>2011-05-09.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-05-09.aspx.designer.cs">
+      <DependentUpon>2011-05-09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-04-21.aspx.cs">
+      <DependentUpon>2011-04-21.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2011\2011-04-21.aspx.designer.cs">
+      <DependentUpon>2011-04-21.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2012\2012-11-26.aspx.cs">
+      <DependentUpon>2012-11-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2012\2012-11-26.aspx.designer.cs">
+      <DependentUpon>2012-11-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2012\2012-01-07.aspx.cs">
+      <DependentUpon>2012-01-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2012\2012-01-07.aspx.designer.cs">
+      <DependentUpon>2012-01-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-11-04.aspx.cs">
+      <DependentUpon>2013-11-04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-11-04.aspx.designer.cs">
+      <DependentUpon>2013-11-04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-05-27.aspx.cs">
+      <DependentUpon>2013-05-27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-05-27.aspx.designer.cs">
+      <DependentUpon>2013-05-27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-09-02.aspx.cs">
+      <DependentUpon>2013-09-02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-09-02.aspx.designer.cs">
+      <DependentUpon>2013-09-02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-01-05.aspx.cs">
+      <DependentUpon>2013-01-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-01-05.aspx.designer.cs">
+      <DependentUpon>2013-01-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-04-26.aspx.cs">
+      <DependentUpon>2013-04-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2013\2013-04-26.aspx.designer.cs">
+      <DependentUpon>2013-04-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-07-18.aspx.cs">
+      <DependentUpon>2014-07-18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-07-18.aspx.designer.cs">
+      <DependentUpon>2014-07-18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-05-26.aspx.cs">
+      <DependentUpon>2014-05-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-05-26.aspx.designer.cs">
+      <DependentUpon>2014-05-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-04-17.aspx.cs">
+      <DependentUpon>2014-04-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-04-17.aspx.designer.cs">
+      <DependentUpon>2014-04-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-01-11.aspx.cs">
+      <DependentUpon>2014-01-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2014\2014-01-11.aspx.designer.cs">
+      <DependentUpon>2014-01-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-12-19.aspx.cs">
+      <DependentUpon>2015-12-19.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-12-19.aspx.designer.cs">
+      <DependentUpon>2015-12-19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-08-01.aspx.cs">
+      <DependentUpon>2015-08-01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-08-01.aspx.designer.cs">
+      <DependentUpon>2015-08-01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-09-07.aspx.cs">
+      <DependentUpon>2015-09-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-09-07.aspx.designer.cs">
+      <DependentUpon>2015-09-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-05-18.aspx.cs">
+      <DependentUpon>2015-05-18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-05-18.aspx.designer.cs">
+      <DependentUpon>2015-05-18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-04-05.aspx.cs">
+      <DependentUpon>2015-04-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2015\2015-04-05.aspx.designer.cs">
+      <DependentUpon>2015-04-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-10-31.aspx.cs">
+      <DependentUpon>2016-10-31.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-10-31.aspx.designer.cs">
+      <DependentUpon>2016-10-31.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-06-11.aspx.cs">
+      <DependentUpon>2016-06-11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-06-11.aspx.designer.cs">
+      <DependentUpon>2016-06-11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-08-26.aspx.cs">
+      <DependentUpon>2016-08-26.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-08-26.aspx.designer.cs">
+      <DependentUpon>2016-08-26.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-09-05.aspx.cs">
+      <DependentUpon>2016-09-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-09-05.aspx.designer.cs">
+      <DependentUpon>2016-09-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-05-30.aspx.cs">
+      <DependentUpon>2016-05-30.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-05-30.aspx.designer.cs">
+      <DependentUpon>2016-05-30.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-05-07.aspx.cs">
+      <DependentUpon>2016-05-07.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Almanak\2016\2016-05-07.aspx.designer.cs">
+      <DependentUpon>2016-05-07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="div_sider\ablekage.aspx.cs">
+      <DependentUpon>ablekage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="div_sider\ablekage.aspx.designer.cs">
+      <DependentUpon>ablekage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="div_sider\bowlink1.aspx.cs">
+      <DependentUpon>bowlink1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="div_sider\bowlink1.aspx.designer.cs">
+      <DependentUpon>bowlink1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="div_sider\KalleMandelgave.aspx.cs">
+      <DependentUpon>KalleMandelgave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="div_sider\KalleMandelgave.aspx.designer.cs">
+      <DependentUpon>KalleMandelgave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="div_sider\Godweekend.aspx.cs">
+      <DependentUpon>Godweekend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="div_sider\Godweekend.aspx.designer.cs">
+      <DependentUpon>Godweekend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="div_sider\klubsang.aspx.cs">
+      <DependentUpon>klubsang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="div_sider\klubsang.aspx.designer.cs">
+      <DependentUpon>klubsang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kalle - Copy.master.cs">
+      <DependentUpon>Kalle - Copy.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kalle - Copy.master.designer.cs">
+      <DependentUpon>Kalle - Copy.master</DependentUpon>
+    </Compile>
+    <Compile Include="Kalle.master.cs">
+      <DependentUpon>Kalle.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kalle.master.designer.cs">
+      <DependentUpon>Kalle.master</DependentUpon>
+    </Compile>
+    <Compile Include="Medlem\Aktiv.aspx.cs">
+      <DependentUpon>Aktiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medlem\Aktiv.aspx.designer.cs">
+      <DependentUpon>Aktiv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medlem\Gaster.aspx.cs">
+      <DependentUpon>Gaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medlem\Gaster.aspx.designer.cs">
+      <DependentUpon>Gaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medlem\Passiv.aspx.cs">
+      <DependentUpon>Passiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medlem\Passiv.aspx.designer.cs">
+      <DependentUpon>Passiv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medlem\Poster.aspx.cs">
+      <DependentUpon>Poster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medlem\Poster.aspx.designer.cs">
+      <DependentUpon>Poster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Medlem\Udmeldt.aspx.cs">
+      <DependentUpon>Udmeldt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Medlem\Udmeldt.aspx.designer.cs">
+      <DependentUpon>Udmeldt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reglement\2001-04-15.aspx.cs">
+      <DependentUpon>2001-04-15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2001-04-15.aspx.designer.cs">
+      <DependentUpon>2001-04-15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2001-04-16.aspx.cs">
+      <DependentUpon>2001-04-16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2001-04-16.aspx.designer.cs">
+      <DependentUpon>2001-04-16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2003-08-18.aspx.cs">
+      <DependentUpon>2003-08-18.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2003-08-18.aspx.designer.cs">
+      <DependentUpon>2003-08-18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2004-09-27.aspx.cs">
+      <DependentUpon>2004-09-27.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2004-09-27.aspx.designer.cs">
+      <DependentUpon>2004-09-27.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2005-09-05.aspx.cs">
+      <DependentUpon>2005-09-05.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2005-09-05.aspx.designer.cs">
+      <DependentUpon>2005-09-05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2008-11-17.aspx.cs">
+      <DependentUpon>2008-11-17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2008-11-17.aspx.designer.cs">
+      <DependentUpon>2008-11-17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement\2011-10-10.aspx.cs">
+      <DependentUpon>2011-10-10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reglement\2011-10-10.aspx.designer.cs">
+      <DependentUpon>2011-10-10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Antal-spilledage.aspx.cs">
+      <DependentUpon>Antal-spilledage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Antal-spilledage.aspx.designer.cs">
+      <DependentUpon>Antal-spilledage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Gns-aar\Gns-aar-aktive.aspx.cs">
+      <DependentUpon>Gns-aar-aktive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Gns-aar\Gns-aar-aktive.aspx.designer.cs">
+      <DependentUpon>Gns-aar-aktive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Gns-aar\GNS-aar-alle.aspx.cs">
+      <DependentUpon>GNS-aar-alle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Gns-aar\GNS-aar-alle.aspx.designer.cs">
+      <DependentUpon>GNS-aar-alle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Kamel-passer.aspx.cs">
+      <DependentUpon>Kamel-passer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Kamel-passer.aspx.designer.cs">
+      <DependentUpon>Kamel-passer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Klub-200.aspx.cs">
+      <DependentUpon>Klub-200.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Klub-200.aspx.designer.cs">
+      <DependentUpon>Klub-200.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Max-score\Max-score-aktive.aspx.cs">
+      <DependentUpon>Max-score-aktive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Max-score\Max-score-aktive.aspx.designer.cs">
+      <DependentUpon>Max-score-aktive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Max-score\Max-score-alle.aspx.cs">
+      <DependentUpon>Max-score-alle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Max-score\Max-score-alle.aspx.designer.cs">
+      <DependentUpon>Max-score-alle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\Spil-pr-dag.aspx.cs">
+      <DependentUpon>Spil-pr-dag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\Spil-pr-dag.aspx.designer.cs">
+      <DependentUpon>Spil-pr-dag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resultat\WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat\WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Vedligehold\Opretspil.aspx.cs">
+      <DependentUpon>Opretspil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vedligehold\Opretspil.aspx.designer.cs">
+      <DependentUpon>Opretspil.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Almanak\2000\2000-06-28.aspx" />
+    <Content Include="Almanak\2000\2000-08-05.aspx" />
+    <Content Include="Almanak\2000\2000-12-02.aspx" />
+    <Content Include="Almanak\2001\2001-02-05.aspx" />
+    <Content Include="Almanak\2001\2001-04-16.aspx" />
+    <Content Include="Almanak\2001\2001-09-10.aspx" />
+    <Content Include="Almanak\2002\2002-06-26.aspx" />
+    <Content Include="Almanak\2002\2002-08-17.aspx" />
+    <Content Include="Almanak\2002\2002-10-07.aspx" />
+    <Content Include="Almanak\2002\2002-12-14.aspx" />
+    <Content Include="Almanak\2003\2003-04-07.aspx" />
+    <Content Include="Almanak\2003\2003-04-17.aspx" />
+    <Content Include="Almanak\2003\2003-08-16.aspx" />
+    <Content Include="Almanak\2003\2003-08-18.aspx" />
+    <Content Include="Almanak\2003\2003-12-06.aspx" />
+    <Content Include="Almanak\2003\2003-12-20.aspx" />
+    <Content Include="Almanak\2004\2004-04-11.aspx" />
+    <Content Include="Almanak\2004\2004-06-28.aspx" />
+    <Content Include="Almanak\2004\2004-08-14.aspx" />
+    <Content Include="Almanak\2004\2004-09-27.aspx" />
+    <Content Include="Almanak\2004\2004-12-11.aspx" />
+    <Content Include="Almanak\2005\2005-01-08.aspx" />
+    <Content Include="Almanak\2005\2005-09-05.aspx" />
+    <Content Include="Almanak\2006\2006-01-21.aspx" />
+    <Content Include="Almanak\2006\2006-04-13.aspx" />
+    <Content Include="Almanak\2006\2006-06-12.aspx" />
+    <Content Include="Almanak\2006\2006-07-28.aspx" />
+    <Content Include="Almanak\2006\2006-08-28.aspx" />
+    <Content Include="Almanak\2006\2006-10-30.aspx" />
+    <Content Include="Almanak\2007\2007-01-06.aspx" />
+    <Content Include="Almanak\2007\2007-05-04.aspx" />
+    <Content Include="Almanak\2007\2007-07-28.aspx" />
+    <Content Include="Almanak\2007\2007-11-05.aspx" />
+    <Content Include="Almanak\2008\2008-02-02.aspx" />
+    <Content Include="Almanak\2008\2008-05-26.aspx" />
+    <Content Include="Almanak\2008\2008-11-17.aspx" />
+    <Content Include="Almanak\2009\2009-01-17.aspx" />
+    <Content Include="Almanak\2009\2009-05-25.aspx" />
+    <Content Include="Almanak\2009\2009-06-13.aspx" />
+    <Content Include="Almanak\2009\2009-08-29.aspx" />
+    <Content Include="Almanak\2009\2009-09-07.aspx" />
+    <Content Include="Almanak\2010\2010-12-18.aspx" />
+    <Content Include="Almanak\2010\2010-10-25.aspx" />
+    <Content Include="Almanak\2010\2010-08-31.aspx" />
+    <Content Include="Almanak\2010\2010-05-31.aspx" />
+    <Content Include="Almanak\2010\2010-09-06.aspx" />
+    <Content Include="Almanak\2010\2010-04-10.aspx" />
+    <Content Include="Almanak\2011\2011-10-10.aspx" />
+    <Content Include="Almanak\2011\2011-09-05.aspx" />
+    <Content Include="Almanak\2011\2011-05-23.aspx" />
+    <Content Include="Almanak\2011\2011-05-30.aspx" />
+    <Content Include="Almanak\2011\2011-05-09.aspx" />
+    <Content Include="Almanak\2011\2011-04-21.aspx" />
+    <Content Include="Almanak\2012\2012-01-07.aspx" />
+    <Content Include="CSS\KalleMaster.css" />
+    <Content Include="CSS\Copy of Menu.css" />
+    <Content Include="div_sider\ablekage.aspx" />
+    <Content Include="div_sider\bowlink1.aspx" />
+    <Content Include="div_sider\KalleMandelgave.aspx" />
+    <Content Include="div_sider\Godweekend.aspx" />
+    <Content Include="div_sider\klubsang.aspx" />
+    <Content Include="images\Kalle\kalle-h.jpg" />
+    <Content Include="images\Kalle\kalle-h-rund.jpg" />
+    <Content Include="images\Kalle\kalle-v-rund.jpg" />
+    <Content Include="images\Kalle\kalle-v.jpg" />
+    <Content Include="images\Kalle\kalle0.jpg" />
+    <Content Include="images\Menu\item-primary-bg.gif" />
+    <Content Include="images\Menu\item-primary-bg.jpg" />
+    <Content Include="images\Menu\item-secondary-bg.jpg" />
+    <Content Include="images\Menu\item-secondary-container-bg.jpg" />
+    <Content Include="images\Menu\item-secondary-title-bg.gif" />
+    <Content Include="images\Menu\item-secondary-title-bg.jpg" />
+    <Content Include="images\Menu\nav-bg-l.jpg" />
+    <Content Include="images\Menu\nav-bg-r.jpg" />
+    <Content Include="images\Menu\nav-bg.jpg" />
+    <Content Include="Kalle.master" />
+    <Content Include="Medlem\Aktiv.aspx" />
+    <Content Include="Medlem\Gaster.aspx" />
+    <Content Include="Medlem\Passiv.aspx" />
+    <Content Include="Medlem\Poster.aspx" />
+    <Content Include="Medlem\Udmeldt.aspx" />
+    <Content Include="Reglement\2001-04-15.aspx" />
+    <Content Include="Reglement\2001-04-16.aspx" />
+    <Content Include="Reglement\2003-08-18.aspx" />
+    <Content Include="Reglement\2004-09-27.aspx" />
+    <Content Include="Reglement\2005-09-05.aspx" />
+    <Content Include="Reglement\2008-11-17.aspx" />
+    <Content Include="Reglement\2011-10-10.aspx" />
+    <Content Include="Resultat\Antal-spilledage.aspx" />
+    <Content Include="Resultat\Gns-aar\Gns-aar-aktive.aspx" />
+    <Content Include="Resultat\Gns-aar\GNS-aar-alle.aspx" />
+    <Content Include="Resultat\Kamel-passer.aspx" />
+    <Content Include="Resultat\Klub-200.aspx" />
+    <Content Include="Resultat\Max-score\Max-score-aktive.aspx" />
+    <Content Include="Resultat\Max-score\Max-score-alle.aspx" />
+    <Content Include="Resultat\Spil-pr-dag.aspx" />
+    <Content Include="Resultat\WebUserControl1.ascx" />
+    <Content Include="Vedligehold\Opretspil.aspx" />
+    <Content Include="Resultat\Statistik\2012-0901-1119.pdf" />
+    <Content Include="Kalle - Copy.master" />
+    <None Include="Properties\PublishProfiles\Wendt.pubxml" />
+    <None Include="web.config" />
+    <None Include="web.config.lokal" />
+    <None Include="web.config.Wendt" />
+    <None Include="div_sider\camel9.pps" />
+    <None Include="SQL\medlem_aktiv.qbquery" />
+    <None Include="SQL\medlem_gaster.qbquery" />
+    <None Include="SQL\medlem_passiv.qbquery" />
+    <None Include="SQL\medlem_poster.qbquery" />
+    <None Include="SQL\medlem_udmeldt.qbquery" />
+    <None Include="SQL\resultat_drop_down_navn.qbquery" />
+    <None Include="SQL\resultat_gns_spil_pr_aar_alle.qbquery" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Browsers\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52041</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

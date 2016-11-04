@@ -1,0 +1,300 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="Kalle" Codebehind="Kalle.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     
+    <link id="Link1" href="CSS/KalleMaster.css" rel="stylesheet" type="text/css" runat="server" />
+    <link id="Link2" href="CSS/Navigation.css" rel="stylesheet" type="text/css" runat="server" /> -
+   
+    <title>Kalle Kamel</title>
+
+    <!-- Kan forhåbentligt fjernes en dag, det er et levn, som giver problemer, når jeg fjerne den
+        Der er på alle web siderne content opsætning til: Head og til Sideindhold
+    <asp:ContentPlaceHolder ID="head" Runat="Server">
+    </asp:ContentPlaceHolder> -->
+
+
+</head>
+<body>
+  <div id="page-wrap">
+            <div class="venstre-kalle"></div>
+            <div class="midten">Kalle Kamel Bowling Klub</div>
+            <div class="hojre-kalle"></div>
+            <div class="slet-float"></div>
+            <div class="HovedMenuLinje">
+                    <div class="nav-container-outer">
+                    <!-- <div class="float-left-menu-end"></div>
+                    <div class="float-right-menu-end"></div> -->
+                    <ul id="nav-container" class="nav-container">
+                        <!-- <li><span class="divider divider-vert"></span></li> -->
+                        <li><a class="item-primary" href="~/default.aspx" runat="server" >Forsiden</a></li>
+
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Resultater</a>
+                              <ul style="width:150px;">
+                                <li><a href="#" target="_self" title="Sæson gennemsnit">Gennemsnit pr. sæson</a>
+                                    <ul style="width:150px;">
+                                    <li><a href="~/Resultat/gns-aar/GNS-aar-aktive.aspx" runat="server" >Aktive</a></li>
+                                    <li><a href="~/Resultat/gns-aar/GNS-aar-alle.aspx" runat="server" >Alle</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li><a href="#" target="_self" title="Max gennemsnit">Max gennemsnit</a>
+                                    <ul style="width:150px;">
+                                    <li><a href="~/Resultat/Max-score/Max-score-aktive.aspx" runat="server" >Aktive</a></li>
+                                    <li><a href="~/Resultat/Max-score/Max-score-alle.aspx" runat="server" >Alle</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li><a href="~/Resultat/Klub-200.aspx" target="_self" title="Klub 200" runat="server" >Klub 200</a></li>
+
+                                <li><a href="~/Resultat/Kamel-passer.aspx" target="_self" title="Kamel Passer" runat="server" >Kamel passer</a></li>
+
+                                <li><a href="~/Resultat/Spil-pr-dag.aspx" target="_self" title="Spilledag" runat="server" >Spil pr. dag</a></li>
+
+                                <li><a href="#" target="_self" title="Statistik fordeling">Statistik fordeling</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Resultat/Statistik/2013-0901-0304.pdf" target="_self" title="Statistik" runat="server" >01/09/12-04/03/13</a></li>
+                                        <li><a href="~/Resultat/Statistik/2012-0901-1119.pdf" target="_self" title="Statistik" runat="server" >01/09/12-19/11/12</a></li>
+                                    </ul> 
+                                </li>
+                            
+                            </ul>
+                        </li>
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Almanak</a>
+                            <ul style="width:150px;">
+                                <li><a href="#" target="_self" title="Alm. 2013">2013</a>
+                                    <ul style="width:150px;">
+                                    <li><a href="~/Almanak/2013/2013-11-04.aspx" runat="server" >04/11/2013 Generalforsamling</a></li>
+                                    <li><a href="~/Almanak/2013/2013-09-02.aspx" runat="server" >02/09/2013 Første spilledag</a></li>
+                                    <li><a href="~/Almanak/2013/2013-05-27.aspx" runat="server" >27/05/2013 Sidste spilledag</a></li>
+                                    <li><a href="~/Almanak/2013/2013-04-26.aspx" runat="server" >26/04/2013 Påskefrokost</a></li>
+                                    <li><a href="~/Almanak/2013/2013-01-05.aspx" runat="server" >05/01/2013 Julefrokost</a></li>
+                                    </ul> 
+                                </li> 
+                                <li><a href="#" target="_self" title="Alm. 2012">2012</a>
+                                    <ul style="width:150px;">
+                                    <li><a id="A8" href="~/Almanak/2012/2012-11-26.aspx" runat="server" >26/11/2012 Generalforsamling</a></li>
+                                    <li><a id="A7" href="~/Almanak/2012/2012-01-07.aspx" runat="server" >07/01/2012 Julefrokost</a></li>
+                                    </ul> 
+                                </li>
+                            
+                                <li><a href="#" target="_self" title="Alm. 2011">2011</a>
+                                    <ul style="width:150px;">
+                                    <li><a id="A6" href="~/Almanak/2011/2011-10-10.aspx" runat="server" >10/10/2011 Generalforsamling</a></li>
+                                    <li><a id="A5" href="~/Almanak/2011/2011-09-05.aspx" runat="server" >05/09/2011 Første spilledag</a></li>
+                                    <li><a id="A4" href="~/Almanak/2011/2011-05-30.aspx" runat="server" >30/05/2011 Sidste spilledag</a></li>
+                                    <li><a id="A3" href="~/Almanak/2011/2011-05-23.aspx" runat="server" >23/05/2011 Afslutnings middag</a></li>
+                                    <li><a id="A2" href="~/Almanak/2011/2011-05-09.aspx" runat="server" >09/05/2011 Spille mod BMS</a></li>
+                                    <li><a id="A1" href="~/Almanak/2011/2011-04-21.aspx" runat="server" >21/04/2011 Påskefrokost</a></li>
+                                    </ul> 
+                                </li>
+
+                                <li><a href="#" target="_self" title="Alm. 2010">2010</a>
+                                    <ul style="width:150px;">
+                                    <li><a href="~/Almanak/2010/2010-12-18.aspx" runat="server" >18/12/2010 Julefrokost</a></li>
+                                    <li><a href="~/Almanak/2010/2010-10-25.aspx" runat="server" >25/10/2010 Generalforsamling</a></li>
+                                    <li><a href="~/Almanak/2010/2010-09-06.aspx" runat="server" >06/09/2010 Første spilledag</a></li>
+                                    <li><a href="~/Almanak/2010/2010-08-31.aspx" runat="server" >31/08/2010 Kalle weekend</a></li>
+                                    <li><a href="~/Almanak/2010/2010-05-31.aspx" runat="server" >31/05/2010 Sidste spilledag</a></li>
+                                    <li><a href="~/Almanak/2010/2010-04-10.aspx" runat="server" >10/04/2010 Generalf. + Julef.</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2009">2009</a>
+                                    <ul style="width:150px;">
+                                    <li><a href="~/Almanak/2009/2009-09-07.aspx" runat="server" >07/09/2009 Første spilledag</a></li>
+                                    <li><a href="~/Almanak/2009/2009-08-29.aspx" runat="server" >29/08/2009 Kalle weekend</a></li>
+                                    <li><a href="~/Almanak/2009/2009-06-13.aspx" runat="server" >13/06/2009 Påskefrokost</a></li>
+                                    <li><a href="~/Almanak/2009/2009-05-25.aspx" runat="server" >25/05/2009 Sidste spilledag</a></li>
+                                    <li><a href="~/Almanak/2009/2009-01-17.aspx" runat="server" >17/01/2009 Julefrokost</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2008">2008</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2008/2008-11-17.aspx" runat="server" >17/11/2008 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2008/2008-05-26.aspx" runat="server" >26/05/2008 Sidste spilledag</a></li>
+                                        <li><a href="~/Almanak/2008/2008-02-02.aspx" runat="server" >02/02/2008 Julefrokost</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2007">2007</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2007/2007-11-05.aspx" runat="server" >05/11/2007 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2007/2007-07-28.aspx" runat="server" >28/07/2007 Kalle weekend</a></li>
+                                        <li><a href="~/Almanak/2007/2007-05-04.aspx" runat="server" >04/05/2007 Påskefrokost</a></li>
+                                        <li><a href="~/Almanak/2007/2007-01-06.aspx" runat="server" >06/01/2007 Julefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2006">2006</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2006/2006-10-30.aspx" runat="server" >30/10/2006 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2006/2006-08-28.aspx" runat="server" >28/08/2006 Første spilledag</a></li>
+                                        <li><a href="~/Almanak/2006/2006-07-28.aspx" runat="server" >28/07/2006 Kalle Weekend</a></li>
+                                        <li><a href="~/Almanak/2006/2006-06-12.aspx" runat="server" >12/06/2006 Sidste spilledag</a></li>
+                                        <li><a href="~/Almanak/2006/2006-04-13.aspx" runat="server" >13/04/2006 Påskefrokost</a></li>
+                                        <li><a href="~/Almanak/2006/2006-01-21.aspx" runat="server" >21/01/2006 Julefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2005">2005</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2005/2005-09-05.aspx" runat="server" >05/09/2005 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2005/2005-01-08.aspx" runat="server" >08/01/2005 Julefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2004">2004</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2004/2004-12-11.aspx" runat="server" >11/12/2004 Crazy Christmas Cabaret</a></li>
+                                        <li><a href="~/Almanak/2004/2004-09-27.aspx" runat="server" >27/09/2004 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2004/2004-08-14.aspx" runat="server" >14/08/2004 Kalle Weekend</a></li>
+                                        <li><a href="~/Almanak/2004/2004-06-28.aspx" runat="server" >28/06/2004 Sidste spilledag 2003/2004</a></li>
+                                        <li><a href="~/Almanak/2004/2004-04-11.aspx" runat="server" >11/04/2004 Påskefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2003">2003</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2003/2003-12-20.aspx" runat="server" >20/12/2003 Julefrokost</a></li>
+                                        <li><a href="~/Almanak/2003/2003-12-06.aspx" runat="server" >06/12/2003 Crazy Christmas Cabaret</a></li>
+                                        <li><a href="~/Almanak/2003/2003-08-18.aspx" runat="server" >18/08/2003 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2003/2003-08-16.aspx" runat="server" >16/08/2003 Kalle weekend</a></li>
+                                        <li><a href="~/Almanak/2003/2003-04-17.aspx" runat="server" >17/04/2003 Påskefrokost</a></li>
+                                        <li><a href="~/Almanak/2003/2003-04-07.aspx" runat="server" >07/04/2003 Bowlingkamp i Allerød</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2002">2002</a>
+                                    <ul style="width:150px;">
+                                               <li><a href="~/Almanak/2002/2002-12-14.aspx" runat="server" >14/12/2002 Julefrokost</a></li>
+                                               <li><a href="~/Almanak/2002/2002-10-07.aspx" runat="server" >10/07/2002 Generalforsamling</a></li>
+                                               <li><a href="~/Almanak/2002/2002-08-17.aspx" runat="server" >17/08/2002 Weekendtur til Møn</a></li>
+                                               <li><a href="~/Almanak/2002/2002-06-26.aspx" runat="server" >26/06/2002 Startdato 2003</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2001">2001</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2001/2001-09-10.aspx" runat="server" >10/09/2001 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2001/2001-04-16.aspx" runat="server" >16/04/2001 Generalforsamling og Påskefrokost</a></li>
+                                        <li><a href="~/Almanak/2001/2001-02-05.aspx" runat="server" >05/02/2001 Turnering mod andre klubber.</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Alm. 2000">2000</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="~/Almanak/2000/2000-12-02.aspx" runat="server" >02/12/2000 Generalforsamling</a></li>
+                                        <li><a href="~/Almanak/2000/2000-08-05.aspx" runat="server" >05/08/2000 Optagelse af nye Medlem(mer)</a></li>
+                                        <li><a href="~/Almanak/2000/2000-06-28.aspx" runat="server" >28/06/2000 Kalle tur til Bakken</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Medlemmer</a>
+                            <ul style="width:150px;">
+                                <li><a href="~/Medlem/Poster.aspx" target="_self" title="Medlemsposter" runat="server" >Medlemsposter</a></li>
+                                <li><a href="~/Medlem/Aktiv.aspx" target="_self" title="Aktive medlemmer" runat="server" >Aktive medlemmer</a></li>
+                                <li><a href="~/Medlem/Passiv.aspx" target="_self" title="Passive medlemmer & Æresmedlemmer" runat="server" >Passive medlemmer</a></li>
+                                <li><a href="~/Medlem/Udmeldt.aspx" target="_self" title="Udmeldte medlemmer" runat="server" >Tidligere medlemmer</a></li>
+                                <li><a href="~/Medlem/Gaster.aspx" target="_self" title="Gæster" runat="server" >Gæster</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Reglement</a>
+                            <ul style="width:150px;">
+                                <li><a href="~/Reglement/2011-10-10.aspx" target="_self" title="2011-10-10" runat="server" >10-10-2011</a></li>
+                                <li><a href="~/Reglement/2008-11-17.aspx" target="_self" title="2008-11-17" runat="server" >17-11-2008 - 10-10-2011</a></li>
+                                <li><a href="~/Reglement/2005-09-05.aspx" target="_self" title="2005-09-05" runat="server" >05-09-2005 - 17-11-2008</a></li>
+                                <li><a href="~/Reglement/2004-09-27.aspx" target="_self" title="2004-09-27" runat="server" >27-09-2004 - 05-09-2005</a></li>
+                                <li><a href="~/Reglement/2003-08-18.aspx" target="_self" title="2003-08-18" runat="server" >18-08-2003 - 27-09-2004</a></li>
+                                <li><a href="~/Reglement/2001-04-16.aspx" target="_self" title="2001-04-16" runat="server" >16-04-2001 - 18-08-2003</a></li>
+                                <li><a href="~/Reglement/2001-04-15.aspx" target="_self" title="2001-04-15" runat="server" >Før 16-04-2001</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Billeder</a>
+                            <ul style="width:150px;">
+                        
+                             <li><a href="#" target="_self" title="Bil. 2010">2010</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20090829KalleMNtur?authkey=Gv1sRgCOqa9PvFq9bj2wE&amp;feat=directlink" target="_blank" runat="server">31/08/2010 Møn tur</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20100410KalleKamelJulefrokost?authkey=Gv1sRgCKaZ1tWR4620Bg&amp;feat=directlink" target="_blank" runat="server" >10/04/2010 Generalf. + Julef.</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20100222BowlingAften?authkey=Gv1sRgCLiLvrX3s8Tk7wE&feat=directlink" target="_blank" runat="server" >22/02/2010 Bowlingaften</a></li>
+                                    </ul>
+                                </li>
+                        
+                                <li><a href="#" target="_self" title="Bil. 2009">2009</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20091116Bowlingaften?authkey=Gv1sRgCNz94eHUj8DvtwE&feat=directlink" target="_blank" runat="server" >16/11/2009 Bowlingaften</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20090829KalleMNtur?authkey=Gv1sRgCOqa9PvFq9bj2wE&amp;feat=directlink" target="_blank" runat="server" >29/08/2009 Møn tur</a></li>
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20090117KallekamelJulefrokost03?authkey=Gv1sRgCKaj6-fy-P6fpQE&feat=directlink" target="_blank" runat="server" >17/01/2009 Julefrokost</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Bil. 2008">2008</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20080526KalleAfslutning2008?authkey=Gv1sRgCOL5op2ykre1Tw&feat=directlink" target="_blank" runat="server" >26/05/2008 Sidste spilledag</a></li>
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20080202KalleJulefrokost?authkey=Gv1sRgCOqy8MTXoa3ifA&feat=directlink" target="_blank" runat="server" >02/02/2008 Julefrokost</a></li>
+                                    </ul> 
+                                </li>
+                                 <li><a href="#" target="_self" title="Bil. 2007">2007</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20071217KalleKamelPakkeBowling?feat=directlink" target="_blank" runat="server" >17/12/2007 Pakke bowling</a></li>
+                                        <li><a href="http://picasaweb.google.com/MortenBayHalberg/20070728MNWeekendKalle?feat=directlink" target="_blank" runat="server" >28/07/2007 Kalle tur på Møn</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#" target="_self" title="Bil. 2006">2006</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/2006072830KalleKamelMN?feat=directlink" target="_blank" runat="server" >28/07/2006 Kalle Weekend</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20060121KallekamelJulefrokost?authkey=Gv1sRgCNnO4uTWutPAJw&feat=directlink" target="_blank" runat="server" >21/01/2006 Julefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Bil. 2005">2005</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20051219BowlingAfslutning?authkey=Gv1sRgCPe277bi47rfwAE&feat=directlink" target="_blank" runat="server" >19/12/2005 Bowling afslutning</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20050108KalleJulefrokost2004?authkey=Gv1sRgCNv4otGIkO3yigE&feat=directlinks" target="_blank" runat="server" >08/01/2005 Julefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Bil. 2004">2004</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20041211CrazyChristmasCabaret?authkey=Gv1sRgCMbH__rJ9oHacg&feat=directlink" target="_blank" runat="server" >11/12/2004 Crazy Christmas Cabaret</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20040814KalleWeekend?authkey=Gv1sRgCIDL4OKl6NCsHQ&feat=directlink" target="_blank" runat="server" >14/08/2004 Kalle Weekend</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20040628KalleAfslutning?authkey=Gv1sRgCJm-ttyJivDorwE&feat=directlink" target="_blank" runat="server" >28/06/2004 Sidste spilledag 2003/2004</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20040411KallePaskefrokost?authkey=Gv1sRgCIuj0tKPr8bk8AE&feat=directlink" target="_blank" runat="server" >11/04/2004 Påskefrokost</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" target="_self" title="Bil. 2003">2003</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20031220KalleJulefrokost?authkey=Gv1sRgCOripZj9lvTdCw&feat=directlink" target="_blank" runat="server" >20/12/2003 Julefrokost</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20030417KallePaskefrokost?authkey=Gv1sRgCJ-V2evtjYL_dQ&feat=directlink" target="_blank" runat="server" >17/04/2003 Påskefrokost</a></li>
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20030406KalleBowlingturTilHillerD?authkey=Gv1sRgCM_055SHitf12gE&feat=directlink" target="_blank" runat="server" >07/04/2003 Bowlingkamp i Allerød</a></li>
+                                    </ul>
+                                </li>
+                                 <li><a href="#" target="_self" title="Bil. 2001">2001</a>
+                                    <ul style="width:150px;">
+                                        <li><a href="http://picasaweb.google.dk/MortenBayHalberg/20010917BowlingAften?authkey=Gv1sRgCJTrj7Xfy7iciwE&feat=directlink" target="_blank" runat="server" >17/09/2003 Bowling aften</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span class="divider divider-vert"></span></li>
+                        <li><a class="item-primary" href="#" target="_self">Div.Opl.</a>
+                            <ul style="width:150px;">
+                                <li><a href="~/div_sider/ablekage.aspx" target="_self" title="Æblekage" runat="server" >Æblekage</a></li>
+                                <li><a href="~/div_sider/bowlink1.aspx" target="_self" title="Bowling hjemmeside" runat="server" >Kevin</a></li>
+                                <li><a href="~/div_sider/Godweekend.aspx" target="_self" title="God weekend" runat="server" >God weekend</a></li>
+                                <li><a href="~/div_sider/klubsang.aspx" target="_self" title="Klubsang" runat="server" >Klubsang</a></li>
+                                <li><a href="~/div_sider/KalleMandelgave.aspx" target="_self" title="Kalle Mandelgave" runat="server" >Kalle Mandelgave</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><span class="divider divider-vert"></span></li> -->
+                        <li class="clear"></li>
+                    </ul>
+                </div>
+        </div> <!-- slut på <div class=HovedMenuLinje> -->
+        <br />
+      <!-- <form> nødvendig for at SQL resultater kan vises -->
+      <form id="form1" runat="server">
+        <div class="Indhold">
+            <asp:ContentPlaceHolder ID="SideIndhold" runat="server">
+                <p>Her skal indholdet stå fra andre sider.</p>
+            </asp:ContentPlaceHolder></div>
+      </form> 
+</div> <!-- slut på id="page-wrap"> -->
+</body>
+</html>

@@ -1,0 +1,313 @@
+﻿/****************************************************/
+/* Vi resetter lige det hele, saa vi ved hvor vi er */
+/****************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+
+/********************************************************/
+/* CSS brugt i KalleMaster.aspx - Det øverste på skærmen*/
+/********************************************************/
+
+body {
+    font-size : 62.5%;
+    font-family: Verdana;
+    background: #E2E2C5;
+    }
+div#page-wrap {
+    width: 900px;
+    /* margin: 20px; */
+    margin: 0px auto;
+    }
+
+/* reset af float efter overskriften */
+.slet-float {
+    clear: both;
+    /* display: none; */
+    }
+
+/* Billedet til venstre af Kalle øverst */
+.venstre-kalle {
+    float: left;
+    /* background-position: left; */
+    background-image: url('../images/Kalle/kalle-v-rund.jpg');
+    background-repeat: no-repeat;
+    height: 88px;
+    width: 10%;
+     /* margin-left: 10%; */
+     /* margin-right: 10px; */
+}
+
+/* Overskriften med Kalle øverst */
+.midten
+{
+    float: left;
+    font-family: Monotype Corsiva, Harlow Solid Italic;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #666666;
+    text-align:center;
+    height: 68px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+/* Billedet til højre af Kalle øverst */
+.hojre-kalle
+{
+    float: right;
+    background-position: right;
+    background-image: url('../images/Kalle/kalle-h-rund.jpg');
+    background-repeat: no-repeat;
+    height: 88px;
+    width: 10%;
+}
+
+/* Bruger området der kan vedligeholdes i de andre aspx sider */
+.Indhold
+{
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+/* Positionering af Navigation linjen. - Fjernes? */
+.HovedMenuLinje
+{
+    width: 80%; 
+    margin-left: 10%;
+    height: 55px;
+
+}
+
+
+/****************************/
+/* CSS brugt i Default.aspx */ 
+/****************************/
+
+.Default-Indhold {
+    width: 80%;
+    margin-left: 10%;
+    text-align:center;
+    }
+
+/********************************/
+/* CSS brugt i resultat siderne */
+/********************************/
+
+/* Resultat Tabellen */
+.Resultat-Tabel
+{
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+}
+
+/* Dropdown box */
+.Resultat-DropDown
+{
+    float: left;
+    margin-left: 40%;
+    width: 20%;
+    background-color: Orange;
+}
+
+/* Navnet */
+.Resultat-Navn
+{
+    text-align:left;
+    font-weight: bold;
+}
+
+/* Andre tekst felter */
+.Resultat-Txt
+{
+    text-align:left;
+    font-weight: normal;
+}
+
+/* Numeriske opl */
+.Resultat-Num
+{
+    text-align:center;
+    font-weight: normal;
+}
+
+/* Checkbox - (har aldrig fået fat i checkmarked, og lavet den bold) */
+.Resultat-CheckBox
+{
+    text-align:center;
+    font-weight: bolder;
+}
+
+/* Datoer */
+.Resultat-Date
+{
+    text-align:center;
+    font-weight: normal;
+}
+
+
+/********************************/
+/* CSS brugt på Almanak siderne */
+/********************************/
+
+/* Hvor skal vi mødes og hvornår */
+.Almanak-Overskrift
+{
+    font-weight: bold;
+    font-size: medium; 
+    text-align: center;
+ }
+
+/* Hvor skal arrangementet afholdes */
+.Almanak-Afholdelsessted
+{
+    font-size: medium;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* Container indeholder Ref til styring af resten af siden */
+.Almanak-Container-Ref
+{
+    float: left;
+    width: 850px;
+    margin-left : 25px;
+    /*background-color : orange*/
+}
+
+/* Container indeholder Ref til området under spalterne */
+.Almanak-Container-Footer
+{
+    width: 850px;
+    /* background-color : green; */
+}
+
+/* Container indeholder Ref til at styre Tabellen */
+.Almanak-Container-Tab
+{
+     background-color : antiquewhite;
+}
+
+/* Venstre spalte */
+.Almanak-V-Ref
+{
+    width: 49%;
+    float: left;
+    margin-top: 10px;
+    /* background-color : red; */
+}
+
+/* Højre spalte */
+.Almanak-H-Ref
+{
+    width: 49%; 
+    float: right;
+    margin-top: 10px;
+    /* background-color : blue; */
+}
+
+/* Overskrift for mail dato og afsender i kollonne */
+.Almanak-kol-heading
+{
+    font-weight: bold;
+    font-size: medium; 
+}
+
+/* Tekst i kolonnerne */
+.Almanak-kol-text
+{
+    font-weight: normal;
+    font-size: initial; 
+}
+
+/* Almanak Tabel*/
+
+/* Centrer tabellen på siden */
+table
+{ 
+    margin: auto;
+}
+
+/* Styling af tabellen */
+table,th,td
+{
+border:1px solid black;
+border-collapse: collapse;
+padding: 3px;
+}
+
+/* Lys op på en række, så det er nemmere at læse */
+tbody tr:hover {
+  background: yellow;
+}
+
+/* Tabel overskrift */
+.Almanak-tab-col-heading
+{
+    text-align:center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* Teksten til venstre - Tak */
+.Almanak-tab-col-left
+{
+    text-align:left;
+}
+
+/* Tal skal midterstilles - Tak */
+.Almanak-tab-col-num
+{
+    text-align:center;
+  /*  padding-right:20px; */
+}
+
+
+/* Centrer resten af teksten under tabellen */
+.Almanak-center
+{
+    text-align:center;
+}
+/* Bunden til link f.eks. billeder og andre ting */
+.Almanak-Bund
+{
+    width: 80%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color:yellow
+}
+
+
+/*******************************/
+/* CSS brugt i Opdatering.aspx */
+/*******************************/
+
+/*Label felter foran datafeleter til iindtastning af et spil */
+.udv-label
+{
+   float: left ;
+   margin-left : 25%;
+}
+
+/* Datafelter til indtastning af et spil */
+.udv-data
+{
+    float: right;
+    margin-right: 30%;
+    width : 20%;
+    text-align:right;
+}
+
+/* OK kanppen ved oprettelse af et spil */
+.udv-ok
+{
+     float: right;
+    margin-right: 30%;
+    width : 20%;
+    text-align:center;
+}

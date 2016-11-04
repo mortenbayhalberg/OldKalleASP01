@@ -1,0 +1,8 @@
+﻿SELECT
+      Stam_Navn, Stam_init, Stam_Opt_dato, Stam_Udmeldt, Stam_Udmeldt_dato, Stam_E_Mail
+FROM
+      Stam
+WHERE
+      Stam_Udmeldt = True
+ORDER BY
+      Stam_Navn
